@@ -1,12 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net45</TargetFrameworks>
+    <TargetFrameworks>net461</TargetFrameworks>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Obvs" Version="4.0.0.1" />
-    <PackageReference Include="log4net" Version="2.0.7.0" />
-    <PackageReference Include="nunit" Version="3.8.1" />
-    <PackageReference Include="log4net" Version="2.0.7.0" />
+    <PackageReference Include="FakeItEasy" Version="4.3.0" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.4.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.5.0" />
+    <PackageReference Include="Microsoft.Reactive.Testing" Version="3.1.1" />
+    <PackageReference Include="xunit" Version="2.3.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Obvs.Logging.NLog\Obvs.Logging.NLog.csproj" />
