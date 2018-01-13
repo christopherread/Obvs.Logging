@@ -1,4 +1,5 @@
-﻿using log4net;
+﻿using System.Reflection;
+using log4net;
 
 namespace Obvs.Logging.Log4Net
 {
@@ -6,7 +7,7 @@ namespace Obvs.Logging.Log4Net
     {
         public ILogger Create(string name)
         {
-            return new Log4NetLogWrapper(LogManager.GetLogger(name));
+            return new Log4NetLogWrapper(LogManager.GetLogger(Assembly.GetEntryAssembly() ,name));
         }
 
         public ILogger Create<T>()
